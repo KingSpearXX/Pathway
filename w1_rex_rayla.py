@@ -1,4 +1,5 @@
 # Week 1: Mad Libs Activity
+# Description: This script generates a mad lib story based on user input. I added some functions to handle the grammar rules for the story.
 # Author: Rex Rayla
 # Git: https://github.com/KingSpearXX/Pathway
 # Branch: week1
@@ -53,28 +54,29 @@ def create_story():
     verbs.append(input("and another verb: "))
     food = input("Enter a type of food: ")
     emotion = input("Enter an emotion: ")
+    exclamation = input("Enter an exclamation: ")
     
     story = f"""
         Once upon a time, there was {determine_article(random.choice(adjectives))} kid
-    named {kid.title()}. One day, {kid.title()} decided to visit the {random.choice(adjectives)} zoo.
-    At the zoo, the first thing {kid.title()} saw was {determine_article(random.choice(adjectives))} {animal} 
-    eating {pluralize_noun(noun.title())}. It was very {random.choice(adjectives)} to see that!
+    named {kid.capitalize()}. One day, {kid.capitalize()} decided to visit the {random.choice(adjectives)} zoo.
+    At the zoo, the first thing {kid.capitalize()} saw was {determine_article(random.choice(adjectives))} {animal} 
+    eating {pluralize_noun(noun.capitalize())}. It was very {random.choice(adjectives)} to see that!
     
-        Next, {kid.title()} saw {determine_article(random.choice(adjectives))} {animal} that
-    was {verb_to_ing(random.choice(verbs))} with a {noun.title()}. {kid.title()} laughed and said, 
-    "That's the most {determine_article(random.choice(adjectives))} thing I've ever seen!"
+        Next, {kid.capitalize()} saw {determine_article(random.choice(adjectives))} {animal} that
+    was {verb_to_ing(random.choice(verbs))} with a {noun.capitalize()}. {kid.capitalize()} laughed and said, 
+    "{exclamation.capitalize()}, that's the most {determine_article(random.choice(adjectives))} thing I've ever seen!"
 
-        Later, {kid.title()} got to feed {determine_article(random.choice(adjectives))} {animal}. 
+        Later, {kid.capitalize()} got to feed {determine_article(random.choice(adjectives))} {animal}. 
     It gently took the {food} from (his/her) 
     hand and {verb_to_ed(random.choice(verbs))} it up in one bite!
 
         But the most {determine_article(random.choice(adjectives))} part of the day was when
     {determine_article(random.choice(adjectives))} {animal} escaped from its enclosure.
     Everyone {verb_to_ed(random.choice(verbs))} in surprise as zookeepers
-    chased it around. In the end, they used {determine_article(noun.title())} to
+    chased it around. In the end, they used {determine_article(noun.capitalize())} to
     coax it back into its home.
 
-        Finally, tired but {emotion}, {kid.title()} went home,
+        Finally, tired but {emotion}, {kid.capitalize()} went home,
     already excited about the next {random.choice(adjectives)} adventure
     at the zoo.
     """
