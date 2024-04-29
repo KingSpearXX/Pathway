@@ -1,4 +1,4 @@
-# Week 2: Mad Libs Activity
+# Week 2: Meal Price Calculator
 # Creativity: I added a tip option to the program. If the user chooses to leave a tip, they can input a percentage to tip. The tip amount is then calculated and added to the total. The user can then input the payment amount and the change is calculated.
 # Author: Rex Rayla
 # Git: https://github.com/KingSpearXX/Pathway
