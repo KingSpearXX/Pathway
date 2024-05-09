@@ -1,5 +1,5 @@
 # Week 3: Adventure Game
-# Creativity: Added a secret choice "fly", I created a function to present the choice and use a loop to make sure to get the correct response. No more nested if since choices are stored in a variable.
+# Creativity: I created a function to present the choice and use a loop to make sure to get the correct response, you can pass an array of choices. No more nested if since choices are stored in a variable. Added Items
 # Author: Rex Rayla
 # Git: https://github.com/KingSpearXX/Pathway
 # Branch: week3
